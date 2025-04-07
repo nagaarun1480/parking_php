@@ -95,7 +95,7 @@ CREATE TABLE `parking_area` (
 --
 
 INSERT INTO `parking_area` (`id`, `pname`, `image`, `address`, `slots`, `area`, `price`, `t_slots`, `latitude`, `longitude`) VALUES
-(2, 'ABC Parking', 'p1.jpg', 'Jss college of arts, commerce and science college ooty road, mysuru', '6', 'Chamundipuram', '50', '10', 12.522157, 76.900917),
+(2, 'ABC Parking', 'p1.jpg', 'Oklahoma city university', '6', 'Oklahoma', '50$', '10', 12.522157, 76.900917),
 (4, 'xyz parking', 'service3.webp', 'water tank, vijaynagar 2nd stage, vijayanagar', '49', 'Vijayanagar', '20', '50', 12.914142, 74.855957),
 (5, 'ABC Parking', 'Screenshot 2024-07-15 154209.png', 'Jss college of arts, commerce and science college ooty road, mysuru', '10', 'Hebbal', '50', '10', 12.920422, 77.607735),
 (6, 'xyz parking', 'service4.jpeg', 'Jss college of arts, commerce and science college ooty road, mysuru', '9', 'Hebbal', '10', '10', 12.920422, 77.607735);
