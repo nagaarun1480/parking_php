@@ -130,6 +130,7 @@ $conn->close();
             <input type="text" name="address" placeholder="Address" class="input-field" required>
             <select name="area" class="input-field" required>
                 <option value="">Select area</option>
+<<<<<<< HEAD
                 <option value="Police Department">Police Department</option>
                 <option value="Art's & Science">Art's & Science</option>
                 <option value="Blackwelder Block">Blackwelder Block</option>
@@ -140,6 +141,18 @@ $conn->close();
             </select>           
             <input type="text" name="slots" placeholder="Total slots" class="input-field" required>
             <input type="number" name="price" placeholder="Amount ($) per Slot" class="input-field" required>
+=======
+                <option value="Vijayanagar">Vijayanagar</option>
+                <option value="Hebbal">Hebbal</option>
+                <option value="Chamundipuram">Chamundipuram</option>
+                <option value="Vidyaranyapuram">Vidyaranyapuram</option>
+                <option value="Ashokapuram">Ashokapuram</option>
+                <option value="Gokulam">Gokulam</option>
+                <!-- Add more fuel types as needed -->
+            </select>           
+            <input type="text" name="slots" placeholder="Total slots" class="input-field" required>
+            <input type="number" name="price" placeholder="Amount (&#8377) per Slot" class="input-field" required>
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
             <input type="text" name="latitude" id="latitude" class="input-field" required>
             <input type="text" name="longitude" id="longitude" class="input-field" required>
             <button type="button" class="btn" onclick="getLocation()">Get Current Location</button>

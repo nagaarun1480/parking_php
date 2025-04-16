@@ -151,7 +151,11 @@ $result = $conn->query($sql);
                     echo "<td>" . $row["booking_date"] . "</td>";
 
                     echo "<td> &#8377 " . $row["total_price"] . "</td>";
+<<<<<<< HEAD
                     echo "<td> <a href='accept_sreq.php?id=" . $row["id"] ."&username=" . $row["username"] ."&total_price=" . $row["total_price"] ."' class=' btn-edit'>Accept</a> | <a href='delete_sreq.php?id=" . $row["id"] . "'class='btn-delete' >Delete</a></td>";
+=======
+                    echo "<td> <a href='accept_sreq.php?id=" . $row["id"] ."' class=' btn-edit'>Accept</a> | <a href='delete_sreq.php?id=" . $row["id"] . "'class='btn-delete' >Delete</a></td>";
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
                     echo "</tr>";
                 }
             } else {

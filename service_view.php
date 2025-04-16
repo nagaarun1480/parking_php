@@ -164,7 +164,11 @@ $sql1 = "SELECT * FROM users where username='$a'";
 $result1 = $conn->query($sql1);
 $row1 = $result1->fetch_assoc();
 ?> 
+<<<<<<< HEAD
    <b><p style="font-size:15px;">Wallet: $ <?php echo $row1['wallet']; ?> | <a href="add_money.php"><i style="font-size:14px;"class="fa fa-plus"></i></a></p></b>
+=======
+   <b><p style="font-size:15px;">Wallet: &#8377 <?php echo $row1['wallet']; ?> | <a href="add_money.php"><i style="font-size:14px;"class="fa fa-plus"></i></a></p></b>
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
 </div>
 <div id="login-btn">
    <a href="logout.php"><button class="btn">Logout</button></a>
@@ -196,7 +200,11 @@ $row1 = $result1->fetch_assoc();
                     echo "<td>" . $row["pname"] . "</td>";
                     echo "<td width='200px'> " . $row["start_time"] . "</td>";
                     echo "<td width='200px'> " . $row["end_time"] . "</td>";
+<<<<<<< HEAD
                     echo "<td> $ " . $row["total_price"] . "</td>";
+=======
+                    echo "<td> &#8377 " . $row["total_price"] . "</td>";
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
                     echo "<td> <a href='booking_cancel.php?id=" . $row["id"] . "'class='btn-delete'>Cancel booking</a></td>";
                     echo "</tr>";
                 }

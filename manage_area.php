@@ -131,7 +131,11 @@ $result = $conn->query($sql);
                     <th>Parking Name</th>
                     <th>Adress</th>
                     <th>Total Slots</th>
+<<<<<<< HEAD
                     <th>Price ($) / Slot</th>
+=======
+                    <th>Price (&#8377) / Slot</th>
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
                     <th>Area</th>
                     <th>Action</th>
                 </tr>
@@ -142,11 +146,19 @@ $result = $conn->query($sql);
                 // Output data of each row
                 while ($row = $result->fetch_assoc()) {
                     echo "<tr>";
+<<<<<<< HEAD
                     echo "<td width='250px'><img  src='image/" . $row["image"] . "' alt = 'No Image'></td>";
                     echo "<td>" . $row["pname"] . "</td>";
                     echo "<td>" . $row["address"] . "</td>";
                     echo "<td>" . $row["t_slots"] . "</td>";
                     echo "<td> $ " . $row["price"] . "</td>";
+=======
+                    echo "<td width='250px'><img  src='image/" . $row["image"] . "'></td>";
+                    echo "<td>" . $row["pname"] . "</td>";
+                    echo "<td>" . $row["address"] . "</td>";
+                    echo "<td>" . $row["t_slots"] . "</td>";
+                    echo "<td> &#8377 " . $row["price"] . "</td>";
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
                     echo "<td>" . $row["area"] . "</td>";
                     echo "<td> <a href='delete_salecar.php?id=" . $row["id"] . "' onclick='return confirm(\"Are you sure you want to delete this Parking Area?\")'>Delete</a></td>";
                     echo "</tr>";

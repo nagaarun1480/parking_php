@@ -32,7 +32,11 @@ if ($result->num_rows > 0) {
         echo "<td>" . $row["pname"] . "</td>";
         echo "<td><a href='$maps_link' target='_blank'>" . $row["address"] . "</a></td>";
         echo "<td>" . $row["area"] . "</td>";
+<<<<<<< HEAD
         echo "<td> $ " . $row["price"] . " / Hour</td>";
+=======
+        echo "<td> &#8377 " . $row["price"] . " / Hour</td>";
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
         echo "<td> <a href='book_parking.php?id=" . $row["id"] . "' class='btn-book'>Book Now</a></td>";
         echo "</tr>";
     }

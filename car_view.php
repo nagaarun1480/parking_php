@@ -164,7 +164,11 @@ $sql1 = "SELECT * FROM users where username='$a'";
 $result1 = $conn->query($sql1);
 $row1 = $result1->fetch_assoc();
 ?> 
+<<<<<<< HEAD
    <b><p style="font-size:15px;">Wallet: $ <?php echo $row1['wallet']; ?> | <a href="add_money.php"><i style="font-size:14px;"class="fa fa-plus"></i></a></p></b>
+=======
+   <b><p style="font-size:15px;">Wallet: &#8377 <?php echo $row1['wallet']; ?> | <a href="add_money.php"><i style="font-size:14px;"class="fa fa-plus"></i></a></p></b>
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
 </div>
 <div id="login-btn">
    <a href="logout.php"><button class="btn">Logout</button></a>
@@ -197,7 +201,11 @@ $row1 = $result1->fetch_assoc();
                     echo "<td>" . $row["pname"] . "</td>";
                     echo "<td width='200px'> " . $row["start_time"] . "</td>";
                     echo "<td width='200px'> " . $row["end_time"] . "</td>";
+<<<<<<< HEAD
                     echo "<td> $ " . $row["total_price"] . "</td>";
+=======
+                    echo "<td> &#8377 " . $row["total_price"] . "</td>";
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
 if( $row['status'] == 0){?>
 <td style="color:orange">Pending</td>
 <?php
@@ -224,8 +232,42 @@ else if( $row['status'] == 2){?>
 </section>
 <section class="footer" id="footer">
 
+<<<<<<< HEAD
 
 
+=======
+<div class="box-container">
+
+
+    <div class="box">
+        <h3>quick links</h3>
+        <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> vehicles </a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> services </a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> featured </a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> reviews </a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+    </div>
+
+    <div class="box">
+        <h3>contact info</h3>
+        <a href="#"> <i class="fas fa-phone"></i> +44 7438 063137 </a>
+        <a href="#"> <i class="fas fa-envelope"></i> vishwanathvenkatesh11@gmail.com </a>
+        <a href="#"> <i class="fas fa-map-marker-alt"></i> City - Country - 000000 </a>
+    </div>
+
+    <div class="box">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/FreeWebsiteCode"> <i class="fab fa-facebook-f"></i> facebook </a>
+        <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+        <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+        <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+        <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+    </div>
+
+</div>
+
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
 <div class="credit"> All Rights Reserved From 2024 By Smart Park </div>
 
 </section>

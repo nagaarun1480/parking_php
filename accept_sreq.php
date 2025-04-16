@@ -16,12 +16,16 @@ if ($conn->connect_error) {
 // Check if the ID parameter is set
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
+<<<<<<< HEAD
     $username = $_GET['username'];
     $total_price = $_GET['total_price'];
+=======
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
 
     // Update the status to 1 for the given booking ID
     $sql = "UPDATE bookings SET status = 1 WHERE id = $id";
 
+<<<<<<< HEAD
     $sql1 = "SELECT wallet FROM users WHERE username = ?";
 $stmt = $conn->prepare($sql1);
 $stmt->bind_param("s", $username);
@@ -41,6 +45,8 @@ $stmt = $conn->prepare($sql2);
 $stmt->bind_param("ds", $total_price, $username); // d = double (float), s = string
 $stmt->execute();
 $stmt->close();    
+=======
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
     if ($conn->query($sql) === TRUE) {
         // Redirect back to the view requests page
         echo '<script type="text/javascript">

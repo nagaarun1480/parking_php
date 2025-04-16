@@ -150,7 +150,11 @@ $sql = "SELECT * FROM users where username='$a'";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
 ?> 
+<<<<<<< HEAD
    <b><p style="font-size:15px;">Wallet: $ <?php echo $row['wallet']; ?> | <a href="add_money.php"><i style="font-size:14px;"class="fa fa-plus"></i></a></p></b>
+=======
+   <b><p style="font-size:15px;">Wallet: &#8377 <?php echo $row['wallet']; ?> | <a href="add_money.php"><i style="font-size:14px;"class="fa fa-plus"></i></a></p></b>
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
 </div>
 <div id="login-btn">
    <a href="logout.php"><button class="btn">Logout</button></a>

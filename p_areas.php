@@ -122,7 +122,11 @@ $result = $conn->query($sql);
         $result = $conn->query($sql);
         $row = $result->fetch_assoc();
         ?>
+<<<<<<< HEAD
         <b><p style="font-size:15px;">Wallet: $ <?php echo $row['wallet']; ?> | <a href="add_money.php"><i style="font-size:14px;"class="fa fa-plus"></i></a></p></b>
+=======
+        <b><p style="font-size:15px;">Wallet: &#8377 <?php echo $row['wallet']; ?> | <a href="add_money.php"><i style="font-size:14px;"class="fa fa-plus"></i></a></p></b>
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
     </div>
     <div id="login-btn">
         <a href="logout.php"><button class="btn">Logout</button></a>
@@ -157,7 +161,11 @@ $result = $conn->query($sql);
                     <th>Parking Name</th>
                     <th width='20%'>Address</th>
                     <th>Area</th>
+<<<<<<< HEAD
                     <th>Price ($) / Hour</th>
+=======
+                    <th>Price (&#8377) / Hour</th>
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
                     <th>Action</th>
                 </tr>
             </thead>
@@ -180,7 +188,11 @@ $result = $conn->query($sql);
                     echo "<td>" . $row["pname"] . "</td>";
                     echo "<td><a href='$maps_link' target='_blank'>" . $row["address"] . "</a></td>";
                     echo "<td>" . $row["area"] . "</td>";
+<<<<<<< HEAD
                     echo "<td> $ " . $row["price"] . " / Hour</td>";
+=======
+                    echo "<td> &#8377 " . $row["price"] . " / Hour</td>";
+>>>>>>> d44b1417104b3129dbe10a2ae571a5f7d97c6ac0
                     echo "<td> <a href='book_parking.php?id=" . $row["id"] . "' class='btn-book'>Book Now</a></td>";
                     echo "</tr>";
                 }
